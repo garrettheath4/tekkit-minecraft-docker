@@ -14,7 +14,6 @@ RUN unzip /tmp/tekkit.zip -d /minecraft/
 ADD ./launch.sh /minecraft/launch.sh
 RUN chmod +x /minecraft/launch.sh
 
-VOLUME /minecraft
 EXPOSE 25565
 
 WORKDIR /minecraft
