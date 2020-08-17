@@ -1,11 +1,11 @@
 # tekkit-classic-docker
 [![Docker Build](https://img.shields.io/docker/cloud/build/dang1t/tekkit-classic-docker.svg)](https://hub.docker.com/r/dang1t/tekkit-classic-docker)
 
-Tekkit Classic 3.1.2 Docker Container.
+Tekkit Classic 1.2.9i Docker Container.
 
 To build the container (if I haven't stuck this on DockerHub):
  1. Install git for your distro if you haven't already.
- 2. Run `git clone https://github.com/LGDan/tekkit-classic-docker.git`
+ 2. Run `git clone https://github.com/garrettheath4/tekkit-classic-docker.git`
  3. Ensure you have docker set up right so you can use it without `sudo` or root (not really necessary, just a preference.)
  4. Run `docker build --tag tekkit-classic:latest tekkit-classic-docker`
 
