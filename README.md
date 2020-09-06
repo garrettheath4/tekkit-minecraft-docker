@@ -1,7 +1,7 @@
 # tekkit-classic-docker
 [![Docker Build](https://img.shields.io/docker/cloud/build/garrettheath4/tekkit-classic.svg)](https://hub.docker.com/r/garrettheath4/tekkit-classic)
 
-Tekkit Classic 1.2.9i Docker container.
+Tekkit Classic v3.1.2 Docker container.
 
 
 ## Build
