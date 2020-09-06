@@ -7,7 +7,7 @@ RUN apk add unzip
 RUN apk add wget
 
 RUN mkdir /minecraft
-RUN wget -O /tmp/tekkit.zip http://servers.technicpack.net/Technic/servers/tekkitmain/Tekkit_Server_v1.2.9g-2.zip
+RUN wget -O /tmp/tekkit.zip http://servers.technicpack.net/Technic/servers/tekkit/Tekkit_Server_3.1.2.zip
 RUN unzip /tmp/tekkit.zip -d /minecraft/
 
 ADD ./launch.sh /minecraft/launch.sh
