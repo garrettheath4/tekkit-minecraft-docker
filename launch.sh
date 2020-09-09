@@ -1,5 +1,6 @@
 #!/bin/sh
 echo $SERVER_OP > /minecraft/ops.txt
 touch /minecraft/server.log
+tmux new-session -d -s tekkit "java $JAVA_ARGS -jar Tekkit.jar nogui"
 sleep 2
-java $JAVA_ARGS -jar Tekkit.jar nogui
+tail -f /minecraft/server.log

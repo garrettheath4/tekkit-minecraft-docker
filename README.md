@@ -56,7 +56,7 @@ argument instead of `-d` in the `docker run ...` command above.
 
 To attach to a running _tekkit-server_ Docker container, run:
 
-    docker exec -it tekkit-server /bin/bash`
+    docker exec -it tekkit-server /bin/bash
 
 
 <!-- vim: set textwidth=80 -->
