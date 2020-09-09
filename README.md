@@ -1,7 +1,8 @@
 # tekkit-minecraft-docker
 [![Docker Build](https://img.shields.io/docker/cloud/build/garrettheath4/tekkit-minecraft.svg)](https://hub.docker.com/r/garrettheath4/tekkit-minecraft)
 
-Tekkit Classic v1.2.9i Docker container.
+Tekkit Classic v1.2.9i Docker container. This project was forked from and based
+on [LGDan/tekkit-classic-docker] on GitHub.
 
 
 ## Build
@@ -54,5 +55,9 @@ To attach to a running _tekkit-server_ Docker container, run:
 
     docker exec -it tekkit-server /bin/bash
 
+
+
+<!-- Links -->
+[LGDan/tekkit-classic-docker]: https://github.com/LGDan/tekkit-classic-docker
 
 <!-- vim: set textwidth=80 -->
