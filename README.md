@@ -1,7 +1,7 @@
-# tekkit-classic-docker
-[![Docker Build](https://img.shields.io/docker/cloud/build/garrettheath4/tekkit-classic.svg)](https://hub.docker.com/r/garrettheath4/tekkit-classic)
+# tekkit-minecraft-docker
+[![Docker Build](https://img.shields.io/docker/cloud/build/garrettheath4/tekkit-minecraft.svg)](https://hub.docker.com/r/garrettheath4/tekkit-minecraft)
 
-Tekkit Classic v3.1.2 Docker container.
+Tekkit Classic v1.2.9i Docker container.
 
 
 ## Build
@@ -9,10 +9,10 @@ Tekkit Classic v3.1.2 Docker container.
 To build the container:
 
 1. Install git for your distro if you haven't already.
-1. Run `git clone https://github.com/garrettheath4/tekkit-classic-docker.git`
+1. Run `git clone https://github.com/garrettheath4/tekkit-minecraft-docker.git`
 1. Ensure you have Docker set up right so you can use it without `sudo` or root
    (not really necessary; just a preference)
-1. Run `docker build --tag tekkit-classic:latest tekkit-classic-docker`
+1. Run `docker build --tag tekkit-minecraft:latest tekkit-minecraft-docker`
 
 
 ## Run
@@ -26,26 +26,22 @@ docker run --detach \
     -e SERVER_OP=<YOUR_MINECRAFT_ACCOUNT_NAME> \
     --name=tekkit-server \
     --restart=unless-stopped \
-    tekkit-classic:latest
+    tekkit-minecraft:latest
 ```
 
 By default, it does store its data in a volume so it's safe to rebuild the
 container if you need to, and re-attach the previous volume to `/minecraft`.
 
-Replace `/VOLUMES/` with the path to your volumes storage location. You can
-also include a volume for `plugins` as well for easy access.
+Replace `/VOLUMES/` with the path to your volumes storage location.
 
 ```shell
 docker run --detach \
-    -v /VOLUMES/world:/minecraft/world \
-    -v /VOLUMES/world_nether:/minecraft/world_nether \
-    -v /VOLUMES/world_the_end:/minecraft/world_the_end \
-    -v /VOLUMES/plugins:/minecraft/plugins \
+    -v /VOLUMES/minecraft:/minecraft \
     -p 25565:25565 \
     -e SERVER_OP=<YOUR_MINECRAFT_ACCOUNT_NAME> \
     --name=tekkit-server \
     --restart=unless-stopped \
-    tekkit-classic:latest
+    tekkit-minecraft:latest
 ```
 
 
